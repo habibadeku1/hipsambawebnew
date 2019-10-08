@@ -1,0 +1,48 @@
+
+a,.tp-caption a.btn:hover {
+	color: #01A89E;
+}
+.top-nav-collapse {
+	background: #01A89E;
+}
+
+@media (max-width: 768px) {
+  .navbar, .navbar-nav {
+		background: #01A89E !important;
+	}
+
+	.navbar-nav a {
+		color: #fff !important;
+	}
+}
+
+.navbar-custom ul.nav ul.dropdown-menu li a:hover {
+	color: #01A89E;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background-color: #01A89E;  
+}
+
+.widget-avatar .avatar:hover {
+    border: 5px solid #01A89E;
+}
+
+.bg-skin {
+	background: #01A89E;
+}
+
+form#contact-form input:focus,form#contact-form select:focus,form#contact-form textarea:focus {
+	border-color: #67b0d1;
+}
+
+footer {
+    background-color: #01A89E;
+}
+
+.btn-skin {
+  color: #fff;
+  background-color: #01A89E;
+  border-color: #01A89E;
+}

@@ -1,0 +1,30 @@
+<div style="padding-top:30px; text-align:center"> <a href="index.html">
+        <img src="img/logobig.png" width="250px" alt=""  /></a></div>
+<br><br>
+
+<form [formGroup]="addForm">
+    <div style="text-align:center">
+        <input placeholder="Enter your phone number" type="tel" formControlName="pno">
+    </div>
+    <br>
+    <div style="text-align:center">
+        <input width="150px" placeholder="Enter your email" type="email" formControlName="email">
+    </div>
+    <br>
+    <div style="text-align:center">
+
+        <button style="background-color:#01A89E;color:white" (click)="save()" type="submit">Generate your free ticket access</button>
+
+    </div>
+</form>
+
+<br>
+
+<div *ngIf="gcode" style="text-align:center" class="alert alert-success" role="alert">
+    This is your ticket access code attached to Email {{emsg}} and Phone Number {{pmsg}}:
+    <font style="text-transform:uppercase;font-weight:bold">{{acode}}</font> , please copy. It will also be emailed to you.
+</div>
+
+<div style="text-align:center" *ngIf="errman" class="alert alert-danger" role="alert">
+    <font style="font-weight:bold">{{errman}}</font>
+</div>
